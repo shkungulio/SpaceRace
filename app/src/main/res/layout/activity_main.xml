@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/previousSpacecraft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/earth" />
+
+    <Button
+        android:id="@+id/btnLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        android:onClick="btnLaunchTapped"
+        android:text="@string/launch"
+        app:backgroundTint="@color/darkgreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNextSpacecraft" />
+
+    <ImageView
+        android:id="@+id/meteor"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spacerock" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_marginBottom="12dp"
+        android:enabled="true"
+        android:onClick="btnRestartTapped"
+        android:text="@string/restart"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/btnLaunch"
+        app:layout_constraintStart_toStartOf="@+id/btnLaunch" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/double_dash"
+        android:textColor="@color/monitorgreen"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnRestart"
+        app:layout_constraintStart_toStartOf="@+id/btnRestart" />
+
+    <Button
+        android:id="@+id/btnPreviousSpacecraft"
+        android:layout_width="40sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="btnPreviousSpacecraftTapped"
+        android:text="@string/lt"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNextSpacecraft"
+        android:layout_width="40sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="btnNextSpacecraftTapped"
+        android:text="@string/gt"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPreviousSpacecraft" />
+
+    <ImageView
+        android:id="@+id/spacecraft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/basica" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Space Race</string>
+    <string name="double_dash">--</string>
+    <string name="lt"><![CDATA[<]]></string>
+    <string name="gt"><![CDATA[>]]></string>
+    <string name="restart">RESTART</string>
+    <string name="launch">Launch!</string>
+</resources>
